@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Balsamiq+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="homework">
+        <h1>Homework 26 Objects</h1>
+        <div class="task">
+            <h2>Task 1</h2>
+            <p class="task__condition">Создать объект, описывающий автомобиль (производитель, модель, год выпуска, средняя скорость), и следующие функции для работы с этим объектом<br>Функция для вывода на экран информации об автомобиле;<br>
+                Функция для подсчета необходимого времени для преодоления переданного расстояния со средней скоростью. Учтите, что через каждые 4 часа дороги водителю необходимо делать перерыв на 1 час.
+                </p>
+                <img src="../../Beetroot!!!/homework!/AndreyKr_homework/homework12/part1/app/img/contact/bg.jpg" alt="">
+            <form class="object" action="">
+                <input type="text" name="producer" value="ИЖ" class="task__value producer" placeholder="Укажите производителя машины" required>
+                <input type="text" name="model" value="412" class="task__value model" placeholder="Укажите модель машины" required>
+                <input type="number" name="yearOfConstruct" value="1975" class="task__value yearOfConstruct" placeholder="Укажите год выпуска машины" required>
+                <input type="number" name="speed" value="100" class="task__value speed" placeholder="Укажите среднюю скорость машины (км/ч)" required>
+                <button class="task__trigger">Нажмите для создания объекта</button>
+            </form>
+            <p class="task__answer"></p>
+            <form class="functions" action="">
+                <p class="task__condition">Укажите расстояние для расчета времени прибытия</p>
+                <input type="number" name="distance" value="350" class="task__value distance" required><br>
+                <select name="function" id="selectFunc_1">
+                    <option value="information">Информация об авто</option>
+                    <option value="time">Время на преодоление расстояния</option>
+                </select>
+                <button class="task__trigger">Нажмите для ответа</button>
+            </form>
+            <p class="task__answer"></p>
+        </div>
+        <div class="task">
+            <h2>Task 2</h2>
+            <p class="task__condition">Создать объект, хранящий в себе отдельно числитель и знаменатель дроби, и следующие функции для работы с этим объектом: <br>
+                Функция сложения 2-х объектов-дробей;<br>
+                Функция вычитания 2-х объектов-дробей;<br>
+                Функция умножения 2-х объектов-дробей;<br>
+                Функция деления 2-х объектов-дробей;<br>
+                Функция сокращения объекта-дроби.                
+                </p>
+                <img src="../../Beetroot!!!/homework!/AndreyKr_homework/homework12/part1/app/img/contact/bg.jpg" alt="">
+            <form class="fraction" action="">
+                <input type="text" name="numenator" value="2" class="task__value producer" placeholder="Укажите производителя машины" required>
+                <input type="text" name="denumenator" value="5" class="task__value model" placeholder="Укажите модель машины" required>
+                <button class="task__trigger">Нажмите для создания объекта</button>
+            </form>
+            <p class="task__answer"></p>
+            <form class="doFraction" action="">
+                <p class="task__condition">Укажите числитель и делитель</p>
+                <input type="number" name="numenator2" value="2" class="task__value numenator2" required><br>
+                <input type="number" name="denumenator2" value="7" class="task__value denumenator2" required><br>
+                <select name="function" id="selectFunc_2">
+                    <option value="addition">Сложить дроби</option>
+                    <option value="subtraction">Отнять дроби</option>
+                    <option value="multiplication">Умножить дроби</option>
+                    <option value="division">Разделить дроби</option>
+                    <option value="simplification">Упростить дробь</option>
+                </select>
+                <button class="task__trigger">Нажмите для ответа</button>
+            </form>
+            <p class="task__answer"></p>
+        </div>
+        <div class="task">
+            <h2>Task 3</h2>
+            <p class="task__condition">Создать объект, описывающий время (часы, минуты, секунды), и следующие функции для работы с этим объектом: <br> Функция вывода времени на экран; Функция изменения времени на переданное количество секунд;<br> Функция изменения времени на переданное количество минут; <br>Функция изменения времени на переданное количество часов. <br>Учтите, что в последних 3-х функциях, при изменении одной части времени, может измениться и другая. Например, если ко времени «20:30:45» добавить 30 секунд, то должно получиться «20:31:15», а не «20:30:75».
+                </p>
+                <img src="../../Beetroot!!!/homework!/AndreyKr_homework/homework12/part1/app/img/contact/bg.jpg" alt="">
+            <form class="time" action="">
+                <input type="number" name="hours" value="15" class="task__value hours" placeholder="Часы" required>
+                <input type="number" name="minutes" value="46" class="task__value minutes" placeholder="Минуты" required>
+                <input type="number" name="seconds" value="21" class="task__value seconds" placeholder="Секунды" required>
+                <button class="task__trigger">Нажмите для создания объекта</button>
+            </form>
+            <p class="task__answer"></p>
+            <form class="minusTime" action="">
+                <p class="task__condition">Укажите значение</p>
+                <input type="number" name="time" value="10" class="task__value time" required><br>
+                <select name="function" id="selectFunc_3">
+                    <option value="minusHours">Отнять часы</option>
+                    <option value="minusMinutes">Отнять минуты</option>
+                    <option value="minusSeconds">Отнять секунды</option>
+                </select>
+                <button class="task__trigger">Нажмите для ответа</button>
+            </form>
+            <p class="task__answer"></p>
+        </div>
+    </section>
+    <script src="task3.js"></script>
+    <script src="task2.js"></script>
+    <script src="task1.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
